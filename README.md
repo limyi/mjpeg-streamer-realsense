@@ -43,7 +43,7 @@ Follow these steps to install the required dependencies:
 2. Run the script:
 
     ```sh
-    python stream_MPEG.py
+    python streamer.py
     ```
 
 3. Access the MJPEG stream from a web browser using the following URL (replace with your server's IP address):
@@ -59,8 +59,4 @@ Follow these steps to install the required dependencies:
 - Make sure the specified `server_ip` matches your machine's IP address.
 - Ensure the required ports are open and not blocked by a firewall.
 - **Note:** Ensure that you are on the same network when you want to stream with another computer.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
