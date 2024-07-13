@@ -49,7 +49,7 @@ Follow these steps to install the required dependencies:
 3. Access the MJPEG stream from a web browser using the following URL (replace with your server's IP address):
 
     ```
-    http://192.168.1.221:8080/stream
+    http://192.168.1.221:8080/my_camera
     ```
 
 ## Troubleshooting
@@ -59,4 +59,9 @@ Follow these steps to install the required dependencies:
 - Make sure the specified `server_ip` matches your machine's IP address.
 - Ensure the required ports are open and not blocked by a firewall.
 - **Note:** Ensure that you are on the same network when you want to stream with another computer.
+- **Note:** Ensure that you have given the necessary permissions to access the `/dev/video*` ports.
+
+    ```sh
+    sudo chmod 666 /dev/video*
+    ```
 
