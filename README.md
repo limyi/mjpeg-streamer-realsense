@@ -36,14 +36,14 @@ Follow these steps to install the required dependencies:
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/yourusername/mjpeg-streamer-realsense.git
+    git clone https://github.com/limyi/mjpeg-streamer-realsense.git
     cd mjpeg-streamer-realsense
     ```
 
 2. Run the script:
 
     ```sh
-    python streamer.py
+    python stream_MPEG.py
     ```
 
 3. Access the MJPEG stream from a web browser using the following URL (replace with your server's IP address):
