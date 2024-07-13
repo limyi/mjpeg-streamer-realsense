@@ -22,13 +22,13 @@ Follow these steps to install the required dependencies:
 2. Install OpenCV for Python:
 
     ```sh
-    pip install opencv-python
+    pip3 install opencv-python
     ```
 
 3. Install the MJPEG Streamer library:
 
     ```sh
-    pip install mjpeg-streamer
+    pip3 install mjpeg-streamer
     ```
 
 ## Usage
@@ -43,7 +43,7 @@ Follow these steps to install the required dependencies:
 2. Run the script:
 
     ```sh
-    python stream_MPEG.py
+    python3 stream_MPEG.py
     ```
 
 3. Access the MJPEG stream from a web browser using the following URL (replace with your server's IP address):
