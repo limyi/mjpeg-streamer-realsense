@@ -43,7 +43,7 @@ Follow these steps to install the required dependencies:
 2. Run the script:
 
     ```sh
-    python streamer.py
+    python stream_MPEG.py
     ```
 
 3. Access the MJPEG stream from a web browser using the following URL (replace with your server's IP address):
