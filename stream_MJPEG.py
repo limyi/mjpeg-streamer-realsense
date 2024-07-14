@@ -19,7 +19,7 @@ server.add_stream(stream)
 # Start the MJPEG server
 server.start()
 
-print(f"Streaming MJPEG at http://{server_ip}:8080/stream")
+print(f"Streaming MJPEG at http://{server_ip}:8080/my_camera")
 
 # Capture frames and stream them
 while True:
