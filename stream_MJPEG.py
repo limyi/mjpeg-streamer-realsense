@@ -8,7 +8,7 @@ cap = cv2.VideoCapture(4)
 stream = Stream("my_camera", size=(640, 480), quality=50, fps=30)
 
 # Specify the IP address of your server machine (replace with actual server IP)
-server_ip = "192.168.1.221"  # Example IP address
+server_ip = "192.168.168.187"  # Example IP address
 
 # Initialize the MJPEG server with the server IP and port
 server = MjpegServer(server_ip, 8080)
@@ -19,7 +19,7 @@ server.add_stream(stream)
 # Start the MJPEG server
 server.start()
 
-print(f"Streaming MJPEG at http://{server_ip}:8080/stream")
+print(f"Streaming MJPEG at http://{server_ip}:8080/my_camera")
 
 # Capture frames and stream them
 while True:
