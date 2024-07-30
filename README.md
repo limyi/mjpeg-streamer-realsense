@@ -136,3 +136,26 @@ Follow these steps to install the required dependencies:
     sudo chmod 666 /dev/video*
     ```
 
+## Additional Notes: Converting MJPEG Format to RTSP Format
+
+To convert an MJPEG stream to an RTSP stream, follow these steps:
+
+1. Download and extract the MediaMTX package:
+   ```sh
+   wget https://github.com/bluenviron/mediamtx/releases/download/v0.0.0/mediamtx_v0.0.0_linux_amd64.tar.gz
+   tar -xzf mediamtx_v0.0.0_linux_amd64.tar.gz
+   cd mediamtx_v0.0.0_linux_amd64
+   ```
+2. Start the MediaMTX server:
+    ```
+    ./mediamtx
+    ```
+    
+3. Run ffmpeg command line:
+    ```
+    ffmpeg -i http://192.168.1.221:8080/my_camera -c:v copy -f rtsp rtsp://localhost:8554/mystream
+
+    ```
+This will take the input from the MJPEG stream available at http://192.168.1.221:8080/my_camera and output it as an RTSP stream at rtsp://localhost:8554/mystream.
+
+This snippet provides a step-by-step guide, including the download, extraction, server start, and stream conversion commands, all in one shot.
