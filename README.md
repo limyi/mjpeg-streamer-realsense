@@ -157,4 +157,3 @@ To convert an MJPEG stream to an RTSP stream, follow these steps:
     ```
 This will take the input from the MJPEG stream available at http://192.168.1.221:8080/my_camera and output it as an RTSP stream at rtsp://localhost:8554/mystream.
 
-This snippet provides a step-by-step guide, including the download, extraction, server start, and stream conversion commands, all in one shot.
