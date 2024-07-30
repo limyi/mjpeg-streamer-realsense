@@ -140,9 +140,8 @@ Follow these steps to install the required dependencies:
 
 To convert an MJPEG stream to an RTSP stream, follow these steps:
 
-1. Download and extract the MediaMTX package:
+1. Download release from https://github.com/bluenviron/mediamtx/releases and extract the MediaMTX package:
    ```sh
-   wget https://github.com/bluenviron/mediamtx/releases/download/v0.0.0/mediamtx_v0.0.0_linux_amd64.tar.gz
    tar -xzf mediamtx_v0.0.0_linux_amd64.tar.gz
    cd mediamtx_v0.0.0_linux_amd64
    ```
