@@ -3,6 +3,7 @@ from mjpeg_streamer import MjpegServer, Stream
 
 # Initialize your OpenCV video capture device
 cap = cv2.VideoCapture(4)
+#cap = cv2.VideoCapture('/dev/video0')    #Use this if you are streaming via HDMI Output to USB converter
 
 # Create a stream object
 stream = Stream("my_camera", size=(640, 480), quality=50, fps=30)
